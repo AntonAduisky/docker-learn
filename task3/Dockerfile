@@ -4,7 +4,7 @@ WORKDIR /home/ilovedocker/app
 
 COPY  ./packages/package*.json .
 
-RUN npm i 
+RUN npm i --omit=dev
 
 COPY ./src .
 
